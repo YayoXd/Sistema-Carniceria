@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MenuPrincipal">
+		<param name="Local" value="Ayuda\MenuPrincipal.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SistemaCarniceria">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cat&aacute;logos">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Clientes">
+				<param name="Local" value="Ayuda\Cliente.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Productos">
+				<param name="Local" value="Ayuda\Productos.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Proveedores">
+				<param name="Local" value="Ayuda\Proveedores.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Categor&iacute;as">
+				<param name="Local" value="Ayuda\Categorias.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Movimientos">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Ventas">
+				<param name="Local" value="Ayuda\Ventas.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Compras">
+				<param name="Local" value="Ayuda\Compras.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pagos">
+				<param name="Local" value="Ayuda\PagosProveedores.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Cobros">
+				<param name="Local" value="Ayuda\CobrosClientes.html">
+				</OBJECT>
+		</UL>
+	</UL>
+</UL>
+</BODY></HTML>

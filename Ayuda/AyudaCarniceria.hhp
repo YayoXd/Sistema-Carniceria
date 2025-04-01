@@ -1,0 +1,23 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=AyudaCarniceria.chm
+Contents file=..\Sistema Carniceria\Ayuda\Table of Contents.hhc
+Default topic=..\Sistema Carniceria\Ayuda\MenuPrincipal.html
+Display compile progress=No
+Language=0x409 English (United States)
+Title=Menú Principal
+
+
+[FILES]
+..\Sistema Carniceria\Ayuda\Categorias.html
+..\Sistema Carniceria\Ayuda\Cliente.html
+..\Sistema Carniceria\Ayuda\CobrosClientes.html
+..\Sistema Carniceria\Ayuda\Compras.html
+..\Sistema Carniceria\Ayuda\MenuPrincipal.html
+..\Sistema Carniceria\Ayuda\PagosProveedores.html
+..\Sistema Carniceria\Ayuda\Productos.html
+..\Sistema Carniceria\Ayuda\Proveedores.html
+..\Sistema Carniceria\Ayuda\Ventas.html
+
+[INFOTYPES]
+

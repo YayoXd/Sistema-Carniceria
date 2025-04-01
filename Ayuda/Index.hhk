@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ventas">
+		<param name="Name" value="Ayuda -- Ventas">
+		<param name="Local" value="Ventas.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Proveedores">
+		<param name="Name" value="Ayuda -- Proveedres">
+		<param name="Local" value="Proveedores.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Productos">
+		<param name="Name" value="Ayuda -- Productos">
+		<param name="Local" value="Productos.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pago">
+		<param name="Name" value="Ayuda -- Pago">
+		<param name="Local" value="PagosProveedores.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Compras">
+		<param name="Name" value="Ayuda -- Compras">
+		<param name="Local" value="Compras.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cobro">
+		<param name="Name" value="Ayuda -- Cobro">
+		<param name="Local" value="CobrosClientes.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Categor&iacute;as">
+		<param name="Name" value="Ayuda -- Categorías">
+		<param name="Local" value="Categorias.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Clientes">
+		<param name="Name" value="Ayuda -- Clientes">
+		<param name="Local" value="Cliente.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Men&uacute;">
+		<param name="Name" value="Ayuda -- Menú Principal">
+		<param name="Local" value="MenuPrincipal.html">
+		</OBJECT>
+</UL>
+</BODY></HTML>

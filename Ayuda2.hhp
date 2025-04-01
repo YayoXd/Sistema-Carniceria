@@ -1,0 +1,23 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Ayuda2.chm
+Contents file=Table of Contents.hhc
+Default topic=Ayuda\MenuPrincipal.html
+Display compile progress=No
+Language=0x409 English (United States)
+Title=MenuPrincipal
+
+
+[FILES]
+Ayuda\MenuPrincipal.html
+Ayuda\Categorias.html
+Ayuda\Cliente.html
+Ayuda\CobrosClientes.html
+Ayuda\Compras.html
+Ayuda\PagosProveedores.html
+Ayuda\Productos.html
+Ayuda\Proveedores.html
+Ayuda\Ventas.html
+
+[INFOTYPES]
+
