@@ -16,7 +16,7 @@ namespace Sistema_Carniceria
     {
         //SqlConnection conn = new SqlConnection("server=Enrique; database=SistemaCarniceria; integrated security = true");
         //SqlConnection conn = new SqlConnection("server=ALEXA-13; database=SistemaCarniceria; integrated security = true");
-        SqlConnection conn = new SqlConnection("server=Enrique; database=SistemaCarniceria; integrated security = true");
+        SqlConnection conn = new SqlConnection("server=DESKTOP-14CCMAH\\SQLEXPRESS; database=SistemaCarniceria; integrated security = true");
         SqlCommand comando = new SqlCommand(); //Creamos un objeto que venga con toda la informacion
         SqlDataReader lector; //Ejecuta la accion del comando
         public Pagos()
