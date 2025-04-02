@@ -35,8 +35,8 @@ namespace Sistema_Carniceria
             this.cmdMaximizar = new System.Windows.Forms.PictureBox();
             this.cmdCerrar = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            //this.button4 = new System.Windows.Forms.Button();
+            //this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cmdReportes = new System.Windows.Forms.Button();
@@ -149,8 +149,8 @@ namespace Sistema_Carniceria
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(76)))), ((int)(((byte)(54)))));
-            this.MenuVertical.Controls.Add(this.button4);
-            this.MenuVertical.Controls.Add(this.button3);
+            //this.MenuVertical.Controls.Add(this.button4);
+            //this.MenuVertical.Controls.Add(this.button3);
             this.MenuVertical.Controls.Add(this.button2);
             this.MenuVertical.Controls.Add(this.button1);
             this.MenuVertical.Controls.Add(this.cmdReportes);
@@ -186,6 +186,7 @@ namespace Sistema_Carniceria
             // 
             // button4
             // 
+            /*
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(76)))), ((int)(((byte)(54)))));
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
@@ -201,6 +202,7 @@ namespace Sistema_Carniceria
             this.button4.TabIndex = 23;
             this.button4.Text = "Restaurar BD";
             this.button4.UseVisualStyleBackColor = false;
+            
             //this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
@@ -221,6 +223,7 @@ namespace Sistema_Carniceria
             this.button3.Text = "Respaldar BD";
             this.button3.UseVisualStyleBackColor = false;
             //this.button3.Click += new System.EventHandler(this.button3_Click);
+            */
             // 
             // button2
             // 
@@ -613,7 +616,7 @@ namespace Sistema_Carniceria
             this.btnUsuarios.TabIndex = 23;
             this.btnUsuarios.Text = "Uusarios";
             this.btnUsuarios.UseVisualStyleBackColor = false;
-            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            //this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // Menu
             // 
