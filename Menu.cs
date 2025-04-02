@@ -16,6 +16,14 @@ namespace Sistema_Carniceria
         public Menu()
         {
             InitializeComponent();
+            Ingresar ingresar = new Ingresar();
+            ingresar.Show();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            Ingresar ingresar = new Ingresar();
+            ingresar.Show();
         }
 
         private void cmdCerrar_Click(object sender, EventArgs e)
@@ -143,6 +151,12 @@ namespace Sistema_Carniceria
                 //MessageBox.Show(rutaR);
                 System.Diagnostics.Process.Start(rutaR);
             }
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            AgregarUsuario registrarUsuario = new AgregarUsuario();
+            registrarUsuario.Show();
         }
     }
 }
