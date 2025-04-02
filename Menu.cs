@@ -16,14 +16,14 @@ namespace Sistema_Carniceria
         public Menu()
         {
             InitializeComponent();
-            Ingresar ingresar = new Ingresar();
-            ingresar.Show();
+            //Ingresar ingresar = new Ingresar();
+            //ingresar.Show();
         }
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            Ingresar ingresar = new Ingresar();
-            ingresar.Show();
+            //Ingresar ingresar = new Ingresar();
+            //ingresar.Show();
         }
 
         private void cmdCerrar_Click(object sender, EventArgs e)

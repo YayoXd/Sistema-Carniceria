@@ -47,6 +47,8 @@ namespace Sistema_Carniceria
                     if (string.Equals(contrasenaGuardada, hashMD5, StringComparison.OrdinalIgnoreCase)) // Comparación sin importar mayúsculas/minúsculas
                     {
                         MessageBox.Show("Contraseña correcta", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Ingresar ingresar = new Ingresar();
+                        ingresar.Show();
                         this.Close(); // Cerrar formulario
                     }
                     else
