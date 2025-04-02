@@ -15,7 +15,7 @@ namespace Sistema_Carniceria
     public partial class Respaldar : Form
     {
 
-        SqlConnection conn = new SqlConnection("server=Enrique; database=SistemaCarniceria; integrated security = true");
+        SqlConnection conn = new SqlConnection("server=DESKTOP-14CCMAH\\SQLEXPRESS; database=SistemaCarniceria; integrated security = true");
         SqlCommand comando = new SqlCommand(); //Creamos un objeto que venga con toda la informacion
         SqlDataReader lector; //Ejecuta la accion del comando
 
@@ -57,6 +57,11 @@ namespace Sistema_Carniceria
             {
                 conn.Close();
             }
+
+        }
+
+        private void Respaldar_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -104,6 +104,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Respaldar";
             this.Text = "Respaldar";
+            this.Load += new System.EventHandler(this.Respaldar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
