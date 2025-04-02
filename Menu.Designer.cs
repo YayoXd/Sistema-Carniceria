@@ -35,8 +35,6 @@ namespace Sistema_Carniceria
             this.cmdMaximizar = new System.Windows.Forms.PictureBox();
             this.cmdCerrar = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            //this.button4 = new System.Windows.Forms.Button();
-            //this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cmdReportes = new System.Windows.Forms.Button();
@@ -63,7 +61,9 @@ namespace Sistema_Carniceria
             this.cmdCategorias = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Contenedor = new System.Windows.Forms.Panel();
-            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.BarraTitulos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmdRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdMinimizar)).BeginInit();
@@ -77,27 +77,27 @@ namespace Sistema_Carniceria
             // BarraTitulos
             // 
             this.BarraTitulos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.BarraTitulos.Controls.Add(this.btnUsuarios);
             this.BarraTitulos.Controls.Add(this.cmdRestaurar);
             this.BarraTitulos.Controls.Add(this.cmdMinimizar);
             this.BarraTitulos.Controls.Add(this.cmdMaximizar);
             this.BarraTitulos.Controls.Add(this.cmdCerrar);
             this.BarraTitulos.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulos.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BarraTitulos.Margin = new System.Windows.Forms.Padding(2);
             this.BarraTitulos.Name = "BarraTitulos";
-            this.BarraTitulos.Size = new System.Drawing.Size(1360, 43);
+            this.BarraTitulos.Size = new System.Drawing.Size(1043, 35);
             this.BarraTitulos.TabIndex = 0;
+            this.BarraTitulos.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulos_MouseDown);
             // 
             // cmdRestaurar
             // 
             this.cmdRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("cmdRestaurar.Image")));
-            this.cmdRestaurar.Location = new System.Drawing.Point(1284, 7);
-            this.cmdRestaurar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdRestaurar.Location = new System.Drawing.Point(986, 6);
+            this.cmdRestaurar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdRestaurar.Name = "cmdRestaurar";
-            this.cmdRestaurar.Size = new System.Drawing.Size(25, 25);
+            this.cmdRestaurar.Size = new System.Drawing.Size(19, 20);
             this.cmdRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cmdRestaurar.TabIndex = 3;
             this.cmdRestaurar.TabStop = false;
@@ -109,10 +109,10 @@ namespace Sistema_Carniceria
             this.cmdMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("cmdMinimizar.Image")));
-            this.cmdMinimizar.Location = new System.Drawing.Point(1239, 6);
-            this.cmdMinimizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdMinimizar.Location = new System.Drawing.Point(952, 5);
+            this.cmdMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdMinimizar.Name = "cmdMinimizar";
-            this.cmdMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.cmdMinimizar.Size = new System.Drawing.Size(19, 20);
             this.cmdMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cmdMinimizar.TabIndex = 2;
             this.cmdMinimizar.TabStop = false;
@@ -123,10 +123,10 @@ namespace Sistema_Carniceria
             this.cmdMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("cmdMaximizar.Image")));
-            this.cmdMaximizar.Location = new System.Drawing.Point(1284, 6);
-            this.cmdMaximizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdMaximizar.Location = new System.Drawing.Point(986, 5);
+            this.cmdMaximizar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdMaximizar.Name = "cmdMaximizar";
-            this.cmdMaximizar.Size = new System.Drawing.Size(25, 25);
+            this.cmdMaximizar.Size = new System.Drawing.Size(19, 20);
             this.cmdMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cmdMaximizar.TabIndex = 1;
             this.cmdMaximizar.TabStop = false;
@@ -137,10 +137,10 @@ namespace Sistema_Carniceria
             this.cmdCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdCerrar.Image = ((System.Drawing.Image)(resources.GetObject("cmdCerrar.Image")));
-            this.cmdCerrar.Location = new System.Drawing.Point(1325, 6);
-            this.cmdCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdCerrar.Location = new System.Drawing.Point(1017, 5);
+            this.cmdCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdCerrar.Name = "cmdCerrar";
-            this.cmdCerrar.Size = new System.Drawing.Size(25, 25);
+            this.cmdCerrar.Size = new System.Drawing.Size(19, 20);
             this.cmdCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cmdCerrar.TabIndex = 0;
             this.cmdCerrar.TabStop = false;
@@ -149,8 +149,9 @@ namespace Sistema_Carniceria
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(76)))), ((int)(((byte)(54)))));
-            //this.MenuVertical.Controls.Add(this.button4);
-            //this.MenuVertical.Controls.Add(this.button3);
+            this.MenuVertical.Controls.Add(this.button5);
+            this.MenuVertical.Controls.Add(this.button4);
+            this.MenuVertical.Controls.Add(this.button3);
             this.MenuVertical.Controls.Add(this.button2);
             this.MenuVertical.Controls.Add(this.button1);
             this.MenuVertical.Controls.Add(this.cmdReportes);
@@ -177,53 +178,12 @@ namespace Sistema_Carniceria
             this.MenuVertical.Controls.Add(this.cmdCategorias);
             this.MenuVertical.Controls.Add(this.pictureBox1);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MenuVertical.Location = new System.Drawing.Point(0, 43);
-            this.MenuVertical.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MenuVertical.Location = new System.Drawing.Point(0, 35);
+            this.MenuVertical.Margin = new System.Windows.Forms.Padding(2);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(224, 607);
+            this.MenuVertical.Size = new System.Drawing.Size(168, 586);
             this.MenuVertical.TabIndex = 1;
             this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
-            // 
-            // button4
-            // 
-            /*
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(76)))), ((int)(((byte)(54)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 529);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(163, 28);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "Restaurar BD";
-            this.button4.UseVisualStyleBackColor = false;
-            
-            //this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(76)))), ((int)(((byte)(54)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(3, 497);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(163, 28);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Respaldar BD";
-            this.button3.UseVisualStyleBackColor = false;
-            //this.button3.Click += new System.EventHandler(this.button3_Click);
-            */
             // 
             // button2
             // 
@@ -235,10 +195,10 @@ namespace Sistema_Carniceria
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(4, 539);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(3, 438);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(217, 30);
+            this.button2.Size = new System.Drawing.Size(163, 24);
             this.button2.TabIndex = 21;
             this.button2.Text = "Consultar Cobros";
             this.button2.UseVisualStyleBackColor = false;
@@ -254,10 +214,10 @@ namespace Sistema_Carniceria
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(5, 505);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(4, 410);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 30);
+            this.button1.Size = new System.Drawing.Size(163, 24);
             this.button1.TabIndex = 20;
             this.button1.Text = "Consultar Pagos";
             this.button1.UseVisualStyleBackColor = false;
@@ -274,10 +234,10 @@ namespace Sistema_Carniceria
             this.cmdReportes.ForeColor = System.Drawing.Color.White;
             this.cmdReportes.Image = ((System.Drawing.Image)(resources.GetObject("cmdReportes.Image")));
             this.cmdReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmdReportes.Location = new System.Drawing.Point(3, 574);
-            this.cmdReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdReportes.Location = new System.Drawing.Point(2, 466);
+            this.cmdReportes.Margin = new System.Windows.Forms.Padding(2);
             this.cmdReportes.Name = "cmdReportes";
-            this.cmdReportes.Size = new System.Drawing.Size(217, 32);
+            this.cmdReportes.Size = new System.Drawing.Size(163, 26);
             this.cmdReportes.TabIndex = 19;
             this.cmdReportes.Text = "Reportes";
             this.cmdReportes.UseVisualStyleBackColor = false;
@@ -286,19 +246,19 @@ namespace Sistema_Carniceria
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.panel10.Location = new System.Drawing.Point(3, 537);
-            this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel10.Location = new System.Drawing.Point(2, 436);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(5, 32);
+            this.panel10.Size = new System.Drawing.Size(4, 26);
             this.panel10.TabIndex = 18;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.panel9.Location = new System.Drawing.Point(3, 498);
-            this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel9.Location = new System.Drawing.Point(2, 405);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(5, 32);
+            this.panel9.Size = new System.Drawing.Size(4, 26);
             this.panel9.TabIndex = 17;
             // 
             // cmdConsulCompras
@@ -311,10 +271,10 @@ namespace Sistema_Carniceria
             this.cmdConsulCompras.ForeColor = System.Drawing.Color.White;
             this.cmdConsulCompras.Image = ((System.Drawing.Image)(resources.GetObject("cmdConsulCompras.Image")));
             this.cmdConsulCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmdConsulCompras.Location = new System.Drawing.Point(3, 469);
-            this.cmdConsulCompras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdConsulCompras.Location = new System.Drawing.Point(2, 381);
+            this.cmdConsulCompras.Margin = new System.Windows.Forms.Padding(2);
             this.cmdConsulCompras.Name = "cmdConsulCompras";
-            this.cmdConsulCompras.Size = new System.Drawing.Size(217, 32);
+            this.cmdConsulCompras.Size = new System.Drawing.Size(163, 26);
             this.cmdConsulCompras.TabIndex = 18;
             this.cmdConsulCompras.Text = "Consulta Compras";
             this.cmdConsulCompras.UseVisualStyleBackColor = false;
@@ -330,10 +290,10 @@ namespace Sistema_Carniceria
             this.cmdConsulVentas.ForeColor = System.Drawing.Color.White;
             this.cmdConsulVentas.Image = ((System.Drawing.Image)(resources.GetObject("cmdConsulVentas.Image")));
             this.cmdConsulVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmdConsulVentas.Location = new System.Drawing.Point(3, 434);
-            this.cmdConsulVentas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdConsulVentas.Location = new System.Drawing.Point(2, 353);
+            this.cmdConsulVentas.Margin = new System.Windows.Forms.Padding(2);
             this.cmdConsulVentas.Name = "cmdConsulVentas";
-            this.cmdConsulVentas.Size = new System.Drawing.Size(217, 30);
+            this.cmdConsulVentas.Size = new System.Drawing.Size(163, 24);
             this.cmdConsulVentas.TabIndex = 17;
             this.cmdConsulVentas.Text = "Consulta Ventas";
             this.cmdConsulVentas.UseVisualStyleBackColor = false;
@@ -343,9 +303,9 @@ namespace Sistema_Carniceria
             // 
             this.cmdSalir.Image = ((System.Drawing.Image)(resources.GetObject("cmdSalir.Image")));
             this.cmdSalir.Location = new System.Drawing.Point(0, 0);
-            this.cmdSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdSalir.Margin = new System.Windows.Forms.Padding(2);
             this.cmdSalir.Name = "cmdSalir";
-            this.cmdSalir.Size = new System.Drawing.Size(29, 41);
+            this.cmdSalir.Size = new System.Drawing.Size(22, 33);
             this.cmdSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cmdSalir.TabIndex = 0;
             this.cmdSalir.TabStop = false;
@@ -354,10 +314,10 @@ namespace Sistema_Carniceria
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.panel8.Location = new System.Drawing.Point(3, 460);
-            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel8.Location = new System.Drawing.Point(2, 374);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(5, 32);
+            this.panel8.Size = new System.Drawing.Size(4, 26);
             this.panel8.TabIndex = 16;
             // 
             // cmdPagos
@@ -370,10 +330,10 @@ namespace Sistema_Carniceria
             this.cmdPagos.ForeColor = System.Drawing.Color.White;
             this.cmdPagos.Image = ((System.Drawing.Image)(resources.GetObject("cmdPagos.Image")));
             this.cmdPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmdPagos.Location = new System.Drawing.Point(3, 401);
-            this.cmdPagos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdPagos.Location = new System.Drawing.Point(2, 326);
+            this.cmdPagos.Margin = new System.Windows.Forms.Padding(2);
             this.cmdPagos.Name = "cmdPagos";
-            this.cmdPagos.Size = new System.Drawing.Size(217, 30);
+            this.cmdPagos.Size = new System.Drawing.Size(163, 24);
             this.cmdPagos.TabIndex = 15;
             this.cmdPagos.Text = "Pagos";
             this.cmdPagos.UseVisualStyleBackColor = false;
@@ -382,56 +342,55 @@ namespace Sistema_Carniceria
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.panel7.Location = new System.Drawing.Point(3, 422);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel7.Location = new System.Drawing.Point(2, 343);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(5, 32);
+            this.panel7.Size = new System.Drawing.Size(4, 26);
             this.panel7.TabIndex = 14;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.panel6.Location = new System.Drawing.Point(0, 384);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.Location = new System.Drawing.Point(0, 312);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(5, 32);
+            this.panel6.Size = new System.Drawing.Size(4, 26);
             this.panel6.TabIndex = 13;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-
-            this.panel5.Location = new System.Drawing.Point(0, 346);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Location = new System.Drawing.Point(0, 281);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(5, 32);
+            this.panel5.Size = new System.Drawing.Size(4, 26);
             this.panel5.TabIndex = 12;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.panel4.Location = new System.Drawing.Point(0, 308);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Location = new System.Drawing.Point(0, 250);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 32);
+            this.panel4.Size = new System.Drawing.Size(4, 26);
             this.panel4.TabIndex = 11;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.panel3.Location = new System.Drawing.Point(0, 270);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(0, 219);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 32);
+            this.panel3.Size = new System.Drawing.Size(4, 26);
             this.panel3.TabIndex = 10;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.panel2.Location = new System.Drawing.Point(0, 231);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 188);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 32);
+            this.panel2.Size = new System.Drawing.Size(4, 26);
             this.panel2.TabIndex = 9;
             // 
             // cmdCobros
@@ -444,10 +403,10 @@ namespace Sistema_Carniceria
             this.cmdCobros.ForeColor = System.Drawing.Color.White;
             this.cmdCobros.Image = ((System.Drawing.Image)(resources.GetObject("cmdCobros.Image")));
             this.cmdCobros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmdCobros.Location = new System.Drawing.Point(3, 367);
-            this.cmdCobros.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdCobros.Location = new System.Drawing.Point(2, 298);
+            this.cmdCobros.Margin = new System.Windows.Forms.Padding(2);
             this.cmdCobros.Name = "cmdCobros";
-            this.cmdCobros.Size = new System.Drawing.Size(217, 30);
+            this.cmdCobros.Size = new System.Drawing.Size(163, 24);
             this.cmdCobros.TabIndex = 8;
             this.cmdCobros.Text = "Cobros";
             this.cmdCobros.UseVisualStyleBackColor = false;
@@ -463,10 +422,10 @@ namespace Sistema_Carniceria
             this.cmdCompras.ForeColor = System.Drawing.Color.White;
             this.cmdCompras.Image = ((System.Drawing.Image)(resources.GetObject("cmdCompras.Image")));
             this.cmdCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmdCompras.Location = new System.Drawing.Point(3, 334);
-            this.cmdCompras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdCompras.Location = new System.Drawing.Point(2, 271);
+            this.cmdCompras.Margin = new System.Windows.Forms.Padding(2);
             this.cmdCompras.Name = "cmdCompras";
-            this.cmdCompras.Size = new System.Drawing.Size(217, 30);
+            this.cmdCompras.Size = new System.Drawing.Size(163, 24);
             this.cmdCompras.TabIndex = 5;
             this.cmdCompras.Text = "Compras";
             this.cmdCompras.UseVisualStyleBackColor = false;
@@ -482,10 +441,10 @@ namespace Sistema_Carniceria
             this.cmdVentas.ForeColor = System.Drawing.Color.White;
             this.cmdVentas.Image = ((System.Drawing.Image)(resources.GetObject("cmdVentas.Image")));
             this.cmdVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmdVentas.Location = new System.Drawing.Point(3, 302);
-            this.cmdVentas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdVentas.Location = new System.Drawing.Point(2, 245);
+            this.cmdVentas.Margin = new System.Windows.Forms.Padding(2);
             this.cmdVentas.Name = "cmdVentas";
-            this.cmdVentas.Size = new System.Drawing.Size(217, 30);
+            this.cmdVentas.Size = new System.Drawing.Size(163, 24);
             this.cmdVentas.TabIndex = 3;
             this.cmdVentas.Text = "Ventas";
             this.cmdVentas.UseVisualStyleBackColor = false;
@@ -501,10 +460,10 @@ namespace Sistema_Carniceria
             this.cmdProveedores.ForeColor = System.Drawing.Color.White;
             this.cmdProveedores.Image = ((System.Drawing.Image)(resources.GetObject("cmdProveedores.Image")));
             this.cmdProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmdProveedores.Location = new System.Drawing.Point(0, 267);
-            this.cmdProveedores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdProveedores.Location = new System.Drawing.Point(0, 217);
+            this.cmdProveedores.Margin = new System.Windows.Forms.Padding(2);
             this.cmdProveedores.Name = "cmdProveedores";
-            this.cmdProveedores.Size = new System.Drawing.Size(217, 30);
+            this.cmdProveedores.Size = new System.Drawing.Size(163, 24);
             this.cmdProveedores.TabIndex = 6;
             this.cmdProveedores.Text = "Proveedores";
             this.cmdProveedores.UseVisualStyleBackColor = false;
@@ -520,10 +479,10 @@ namespace Sistema_Carniceria
             this.cmdProductos.ForeColor = System.Drawing.Color.White;
             this.cmdProductos.Image = ((System.Drawing.Image)(resources.GetObject("cmdProductos.Image")));
             this.cmdProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmdProductos.Location = new System.Drawing.Point(0, 194);
-            this.cmdProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdProductos.Location = new System.Drawing.Point(0, 158);
+            this.cmdProductos.Margin = new System.Windows.Forms.Padding(2);
             this.cmdProductos.Name = "cmdProductos";
-            this.cmdProductos.Size = new System.Drawing.Size(217, 34);
+            this.cmdProductos.Size = new System.Drawing.Size(163, 28);
             this.cmdProductos.TabIndex = 7;
             this.cmdProductos.Text = "Productos";
             this.cmdProductos.UseVisualStyleBackColor = false;
@@ -532,10 +491,10 @@ namespace Sistema_Carniceria
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.panel1.Location = new System.Drawing.Point(0, 194);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 158);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 32);
+            this.panel1.Size = new System.Drawing.Size(4, 26);
             this.panel1.TabIndex = 2;
             // 
             // cmdCliente
@@ -548,10 +507,10 @@ namespace Sistema_Carniceria
             this.cmdCliente.ForeColor = System.Drawing.Color.White;
             this.cmdCliente.Image = ((System.Drawing.Image)(resources.GetObject("cmdCliente.Image")));
             this.cmdCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmdCliente.Location = new System.Drawing.Point(0, 233);
-            this.cmdCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdCliente.Location = new System.Drawing.Point(0, 189);
+            this.cmdCliente.Margin = new System.Windows.Forms.Padding(2);
             this.cmdCliente.Name = "cmdCliente";
-            this.cmdCliente.Size = new System.Drawing.Size(217, 30);
+            this.cmdCliente.Size = new System.Drawing.Size(163, 24);
             this.cmdCliente.TabIndex = 4;
             this.cmdCliente.Text = "Clientes";
             this.cmdCliente.UseVisualStyleBackColor = false;
@@ -568,10 +527,10 @@ namespace Sistema_Carniceria
             this.cmdCategorias.ForeColor = System.Drawing.Color.White;
             this.cmdCategorias.Image = ((System.Drawing.Image)(resources.GetObject("cmdCategorias.Image")));
             this.cmdCategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cmdCategorias.Location = new System.Drawing.Point(0, 158);
-            this.cmdCategorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdCategorias.Location = new System.Drawing.Point(0, 128);
+            this.cmdCategorias.Margin = new System.Windows.Forms.Padding(2);
             this.cmdCategorias.Name = "cmdCategorias";
-            this.cmdCategorias.Size = new System.Drawing.Size(217, 32);
+            this.cmdCategorias.Size = new System.Drawing.Size(163, 26);
             this.cmdCategorias.TabIndex = 1;
             this.cmdCategorias.Text = "Categorías";
             this.cmdCategorias.UseVisualStyleBackColor = false;
@@ -580,10 +539,10 @@ namespace Sistema_Carniceria
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(221, 154);
+            this.pictureBox1.Size = new System.Drawing.Size(166, 125);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -592,45 +551,81 @@ namespace Sistema_Carniceria
             // 
             this.Contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(193)))));
             this.Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Contenedor.Location = new System.Drawing.Point(224, 43);
-            this.Contenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Contenedor.Location = new System.Drawing.Point(168, 35);
+            this.Contenedor.Margin = new System.Windows.Forms.Padding(2);
             this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(1136, 607);
+            this.Contenedor.Size = new System.Drawing.Size(875, 586);
             this.Contenedor.TabIndex = 2;
             this.Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.Contenedor_Paint);
             // 
-            // btnUsuarios
+            // button3
             // 
-            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(76)))), ((int)(((byte)(54)))));
-            this.btnUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
-            this.btnUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.Image")));
-            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(224, 9);
-            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(217, 30);
-            this.btnUsuarios.TabIndex = 23;
-            this.btnUsuarios.Text = "Uusarios";
-            this.btnUsuarios.UseVisualStyleBackColor = false;
-            //this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(76)))), ((int)(((byte)(54)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(3, 495);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(163, 28);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "Respaldar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(76)))), ((int)(((byte)(54)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(3, 526);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(163, 28);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "Restaurar";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(76)))), ((int)(((byte)(54)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(3, 557);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(163, 24);
+            this.button5.TabIndex = 24;
+            this.button5.Text = "Registrar Usuarios";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 631);
-
+            this.ClientSize = new System.Drawing.Size(1043, 621);
             this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.MenuVertical);
             this.Controls.Add(this.BarraTitulos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
-
             this.Name = "Menu";
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Menu_KeyDown);
@@ -680,7 +675,9 @@ namespace Sistema_Carniceria
         private System.Windows.Forms.Button cmdReportes;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
     }
 }
 

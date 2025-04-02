@@ -15,7 +15,7 @@ namespace Sistema_Carniceria
 {
     public partial class AgregarUsuario : Form
     {
-        SqlConnection conn = new SqlConnection("server=MAZARI_BALTAZAR; database=SistemaCarniceria; integrated security = true");
+        SqlConnection conn = new SqlConnection("server=DESKTOP-14CCMAH\\SQLEXPRESS; database=SistemaCarniceria; integrated security = true");
         SqlCommand comando = new SqlCommand(); //Creamos un objeto que venga con toda la informacion
         SqlDataReader lector; //Ejecuta la accion del comando
 
