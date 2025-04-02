@@ -245,6 +245,18 @@
     <Compile Include="ReportWindow.Designer.cs">
       <DependentUpon>ReportWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Respaldar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Respaldar.Designer.cs">
+      <DependentUpon>Respaldar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurar.Designer.cs">
+      <DependentUpon>Restaurar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -318,6 +330,12 @@
     <EmbeddedResource Include="Reportes\ReporteCategorias.rdlc" />
     <EmbeddedResource Include="ReportWindow.resx">
       <DependentUpon>ReportWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Respaldar.resx">
+      <DependentUpon>Respaldar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurar.resx">
+      <DependentUpon>Restaurar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas.resx">
       <DependentUpon>Ventas.cs</DependentUpon>

@@ -153,10 +153,14 @@ namespace Sistema_Carniceria
             }
         }
 
-        private void btnUsuarios_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            AgregarUsuario registrarUsuario = new AgregarUsuario();
-            registrarUsuario.Show();
+            AbrirFormHija(new Respaldar());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Restaurar());
         }
     }
 }

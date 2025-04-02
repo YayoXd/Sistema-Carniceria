@@ -27,7 +27,7 @@ namespace Sistema_Carniceria
         public string idCboValue { get; set; }
         public int tolerancia { get; set; }
 
-        SqlConnection conexion = new SqlConnection("server=DESKTOP-14CCMAH\\SQLEXPRESS; database=SistemaCarniceria; integrated security = true");
+        SqlConnection conexion = new SqlConnection("server=DESKTOP-14CCMAH\\SQLEXPRESS; database=SistemaCarniceria; integrated security = true");//cambio cuando sea necesario
         SqlDataReader lector; //Ejecuta la accion del comando
 
         public ReportWindow()
