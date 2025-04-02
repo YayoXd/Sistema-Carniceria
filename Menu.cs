@@ -144,5 +144,15 @@ namespace Sistema_Carniceria
                 System.Diagnostics.Process.Start(rutaR);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Respaldar());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Restaurar());
+        }
     }
 }

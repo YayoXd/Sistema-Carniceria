@@ -35,6 +35,8 @@
             this.cmdMaximizar = new System.Windows.Forms.PictureBox();
             this.cmdCerrar = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cmdReportes = new System.Windows.Forms.Button();
@@ -80,7 +82,7 @@
             this.BarraTitulos.Controls.Add(this.cmdCerrar);
             this.BarraTitulos.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulos.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BarraTitulos.Margin = new System.Windows.Forms.Padding(2);
             this.BarraTitulos.Name = "BarraTitulos";
             this.BarraTitulos.Size = new System.Drawing.Size(1020, 35);
             this.BarraTitulos.TabIndex = 0;
@@ -91,7 +93,7 @@
             this.cmdRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("cmdRestaurar.Image")));
             this.cmdRestaurar.Location = new System.Drawing.Point(963, 6);
-            this.cmdRestaurar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdRestaurar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdRestaurar.Name = "cmdRestaurar";
             this.cmdRestaurar.Size = new System.Drawing.Size(19, 20);
             this.cmdRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -106,7 +108,7 @@
             this.cmdMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("cmdMinimizar.Image")));
             this.cmdMinimizar.Location = new System.Drawing.Point(929, 5);
-            this.cmdMinimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdMinimizar.Name = "cmdMinimizar";
             this.cmdMinimizar.Size = new System.Drawing.Size(19, 20);
             this.cmdMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -120,7 +122,7 @@
             this.cmdMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("cmdMaximizar.Image")));
             this.cmdMaximizar.Location = new System.Drawing.Point(963, 5);
-            this.cmdMaximizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdMaximizar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdMaximizar.Name = "cmdMaximizar";
             this.cmdMaximizar.Size = new System.Drawing.Size(19, 20);
             this.cmdMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -134,7 +136,7 @@
             this.cmdCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdCerrar.Image = ((System.Drawing.Image)(resources.GetObject("cmdCerrar.Image")));
             this.cmdCerrar.Location = new System.Drawing.Point(994, 5);
-            this.cmdCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdCerrar.Name = "cmdCerrar";
             this.cmdCerrar.Size = new System.Drawing.Size(19, 20);
             this.cmdCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -145,6 +147,8 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(76)))), ((int)(((byte)(54)))));
+            this.MenuVertical.Controls.Add(this.button4);
+            this.MenuVertical.Controls.Add(this.button3);
             this.MenuVertical.Controls.Add(this.button2);
             this.MenuVertical.Controls.Add(this.button1);
             this.MenuVertical.Controls.Add(this.cmdReportes);
@@ -172,11 +176,49 @@
             this.MenuVertical.Controls.Add(this.pictureBox1);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 35);
-            this.MenuVertical.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MenuVertical.Margin = new System.Windows.Forms.Padding(2);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(168, 493);
+            this.MenuVertical.Size = new System.Drawing.Size(168, 596);
             this.MenuVertical.TabIndex = 1;
             this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(76)))), ((int)(((byte)(54)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(3, 529);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(163, 28);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "Restaurar BD";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(76)))), ((int)(((byte)(54)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(3, 497);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(163, 28);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "Respaldar BD";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -189,7 +231,7 @@
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(3, 438);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(163, 24);
             this.button2.TabIndex = 21;
@@ -208,7 +250,7 @@
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(4, 410);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 24);
             this.button1.TabIndex = 20;
@@ -228,7 +270,7 @@
             this.cmdReportes.Image = ((System.Drawing.Image)(resources.GetObject("cmdReportes.Image")));
             this.cmdReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdReportes.Location = new System.Drawing.Point(2, 466);
-            this.cmdReportes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdReportes.Margin = new System.Windows.Forms.Padding(2);
             this.cmdReportes.Name = "cmdReportes";
             this.cmdReportes.Size = new System.Drawing.Size(163, 26);
             this.cmdReportes.TabIndex = 19;
@@ -240,7 +282,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.panel10.Location = new System.Drawing.Point(2, 436);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(4, 26);
             this.panel10.TabIndex = 18;
@@ -249,7 +291,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.panel9.Location = new System.Drawing.Point(2, 405);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(4, 26);
             this.panel9.TabIndex = 17;
@@ -265,7 +307,7 @@
             this.cmdConsulCompras.Image = ((System.Drawing.Image)(resources.GetObject("cmdConsulCompras.Image")));
             this.cmdConsulCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdConsulCompras.Location = new System.Drawing.Point(2, 381);
-            this.cmdConsulCompras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdConsulCompras.Margin = new System.Windows.Forms.Padding(2);
             this.cmdConsulCompras.Name = "cmdConsulCompras";
             this.cmdConsulCompras.Size = new System.Drawing.Size(163, 26);
             this.cmdConsulCompras.TabIndex = 18;
@@ -284,7 +326,7 @@
             this.cmdConsulVentas.Image = ((System.Drawing.Image)(resources.GetObject("cmdConsulVentas.Image")));
             this.cmdConsulVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdConsulVentas.Location = new System.Drawing.Point(2, 353);
-            this.cmdConsulVentas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdConsulVentas.Margin = new System.Windows.Forms.Padding(2);
             this.cmdConsulVentas.Name = "cmdConsulVentas";
             this.cmdConsulVentas.Size = new System.Drawing.Size(163, 24);
             this.cmdConsulVentas.TabIndex = 17;
@@ -296,7 +338,7 @@
             // 
             this.cmdSalir.Image = ((System.Drawing.Image)(resources.GetObject("cmdSalir.Image")));
             this.cmdSalir.Location = new System.Drawing.Point(0, 0);
-            this.cmdSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdSalir.Margin = new System.Windows.Forms.Padding(2);
             this.cmdSalir.Name = "cmdSalir";
             this.cmdSalir.Size = new System.Drawing.Size(22, 33);
             this.cmdSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -308,7 +350,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.panel8.Location = new System.Drawing.Point(2, 374);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(4, 26);
             this.panel8.TabIndex = 16;
@@ -324,7 +366,7 @@
             this.cmdPagos.Image = ((System.Drawing.Image)(resources.GetObject("cmdPagos.Image")));
             this.cmdPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdPagos.Location = new System.Drawing.Point(2, 326);
-            this.cmdPagos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdPagos.Margin = new System.Windows.Forms.Padding(2);
             this.cmdPagos.Name = "cmdPagos";
             this.cmdPagos.Size = new System.Drawing.Size(163, 24);
             this.cmdPagos.TabIndex = 15;
@@ -336,7 +378,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.panel7.Location = new System.Drawing.Point(2, 343);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(4, 26);
             this.panel7.TabIndex = 14;
@@ -345,7 +387,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.panel6.Location = new System.Drawing.Point(0, 312);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(4, 26);
             this.panel6.TabIndex = 13;
@@ -354,7 +396,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.panel5.Location = new System.Drawing.Point(0, 281);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(4, 26);
             this.panel5.TabIndex = 12;
@@ -363,7 +405,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.panel4.Location = new System.Drawing.Point(0, 250);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(4, 26);
             this.panel4.TabIndex = 11;
@@ -372,7 +414,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.panel3.Location = new System.Drawing.Point(0, 219);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(4, 26);
             this.panel3.TabIndex = 10;
@@ -381,7 +423,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.panel2.Location = new System.Drawing.Point(0, 188);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(4, 26);
             this.panel2.TabIndex = 9;
@@ -397,7 +439,7 @@
             this.cmdCobros.Image = ((System.Drawing.Image)(resources.GetObject("cmdCobros.Image")));
             this.cmdCobros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdCobros.Location = new System.Drawing.Point(2, 298);
-            this.cmdCobros.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdCobros.Margin = new System.Windows.Forms.Padding(2);
             this.cmdCobros.Name = "cmdCobros";
             this.cmdCobros.Size = new System.Drawing.Size(163, 24);
             this.cmdCobros.TabIndex = 8;
@@ -416,7 +458,7 @@
             this.cmdCompras.Image = ((System.Drawing.Image)(resources.GetObject("cmdCompras.Image")));
             this.cmdCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdCompras.Location = new System.Drawing.Point(2, 271);
-            this.cmdCompras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdCompras.Margin = new System.Windows.Forms.Padding(2);
             this.cmdCompras.Name = "cmdCompras";
             this.cmdCompras.Size = new System.Drawing.Size(163, 24);
             this.cmdCompras.TabIndex = 5;
@@ -435,7 +477,7 @@
             this.cmdVentas.Image = ((System.Drawing.Image)(resources.GetObject("cmdVentas.Image")));
             this.cmdVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdVentas.Location = new System.Drawing.Point(2, 245);
-            this.cmdVentas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdVentas.Margin = new System.Windows.Forms.Padding(2);
             this.cmdVentas.Name = "cmdVentas";
             this.cmdVentas.Size = new System.Drawing.Size(163, 24);
             this.cmdVentas.TabIndex = 3;
@@ -454,7 +496,7 @@
             this.cmdProveedores.Image = ((System.Drawing.Image)(resources.GetObject("cmdProveedores.Image")));
             this.cmdProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdProveedores.Location = new System.Drawing.Point(0, 217);
-            this.cmdProveedores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdProveedores.Margin = new System.Windows.Forms.Padding(2);
             this.cmdProveedores.Name = "cmdProveedores";
             this.cmdProveedores.Size = new System.Drawing.Size(163, 24);
             this.cmdProveedores.TabIndex = 6;
@@ -473,7 +515,7 @@
             this.cmdProductos.Image = ((System.Drawing.Image)(resources.GetObject("cmdProductos.Image")));
             this.cmdProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdProductos.Location = new System.Drawing.Point(0, 158);
-            this.cmdProductos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdProductos.Margin = new System.Windows.Forms.Padding(2);
             this.cmdProductos.Name = "cmdProductos";
             this.cmdProductos.Size = new System.Drawing.Size(163, 28);
             this.cmdProductos.TabIndex = 7;
@@ -485,7 +527,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.panel1.Location = new System.Drawing.Point(0, 158);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(4, 26);
             this.panel1.TabIndex = 2;
@@ -501,7 +543,7 @@
             this.cmdCliente.Image = ((System.Drawing.Image)(resources.GetObject("cmdCliente.Image")));
             this.cmdCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdCliente.Location = new System.Drawing.Point(0, 189);
-            this.cmdCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdCliente.Margin = new System.Windows.Forms.Padding(2);
             this.cmdCliente.Name = "cmdCliente";
             this.cmdCliente.Size = new System.Drawing.Size(163, 24);
             this.cmdCliente.TabIndex = 4;
@@ -521,7 +563,7 @@
             this.cmdCategorias.Image = ((System.Drawing.Image)(resources.GetObject("cmdCategorias.Image")));
             this.cmdCategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdCategorias.Location = new System.Drawing.Point(0, 128);
-            this.cmdCategorias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdCategorias.Margin = new System.Windows.Forms.Padding(2);
             this.cmdCategorias.Name = "cmdCategorias";
             this.cmdCategorias.Size = new System.Drawing.Size(163, 26);
             this.cmdCategorias.TabIndex = 1;
@@ -533,7 +575,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(2, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(166, 125);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -545,9 +587,9 @@
             this.Contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(193)))));
             this.Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Contenedor.Location = new System.Drawing.Point(168, 35);
-            this.Contenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Contenedor.Margin = new System.Windows.Forms.Padding(2);
             this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(852, 493);
+            this.Contenedor.Size = new System.Drawing.Size(852, 596);
             this.Contenedor.TabIndex = 2;
             this.Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.Contenedor_Paint);
             // 
@@ -555,13 +597,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 528);
+            this.ClientSize = new System.Drawing.Size(1020, 631);
             this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.MenuVertical);
             this.Controls.Add(this.BarraTitulos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Menu";
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Menu_KeyDown);
@@ -611,6 +653,8 @@
         private System.Windows.Forms.Button cmdReportes;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 
