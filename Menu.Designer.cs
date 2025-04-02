@@ -201,7 +201,7 @@ namespace Sistema_Carniceria
             this.button4.TabIndex = 23;
             this.button4.Text = "Restaurar BD";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            //this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -220,7 +220,7 @@ namespace Sistema_Carniceria
             this.button3.TabIndex = 22;
             this.button3.Text = "Respaldar BD";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            //this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
