@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Sistema_Carniceria
 {
@@ -26,7 +27,7 @@ namespace Sistema_Carniceria
         public string idCboValue { get; set; }
         public int tolerancia { get; set; }
 
-        SqlConnection conexion = new SqlConnection("server=Enrique; database=SistemaCarniceria; integrated security = true");
+        SqlConnection conexion = new SqlConnection("server=DESKTOP-14CCMAH\\SQLEXPRESS; database=SistemaCarniceria; integrated security = true");
         SqlDataReader lector; //Ejecuta la accion del comando
 
         public ReportWindow()
@@ -152,7 +153,8 @@ namespace Sistema_Carniceria
                     ReportDataSource Reportes = new ReportDataSource("DataSet1", Data.Tables[0]);
                     reportViewer1.LocalReport.DataSources.Clear();
                     reportViewer1.LocalReport.DataSources.Add(Reportes);
-                    reportViewer1.LocalReport.ReportPath = "Reportes\\" + report + ".rdlc";
+                  
+                    reportViewer1.LocalReport.ReportPath = "C:\\Users\\LENOVO\\Desktop\\Sistema Carniceria\\Reportes\\" + report + ".rdlc";
 
                     this.reportViewer1.RefreshReport();
                     conexion.Close();
